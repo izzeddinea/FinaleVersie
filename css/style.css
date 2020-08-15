@@ -1,0 +1,677 @@
+@media all
+{
+    body
+    {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+    }
+}
+
+/*algemeen*/
+.grid
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    background-color: #000000;
+}
+
+.Titel
+{
+    font-size: 	1.5625rem;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 2% 0;
+}
+ 
+.logo
+{
+    text-align: center;
+    color: #ffffff;
+    margin: 5% 1rem 0 5%;
+    font-size: 2.5rem;
+}
+
+.logo a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+ 
+.navigation
+{
+    text-align: center;
+}
+ 
+.navigation ul li
+{   
+    display: block;
+    margin: 1%;
+    padding:2%;
+    font-size: 1.25rem;
+}
+ 
+.navigation a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navigation .current
+{
+    color: #ff0000;
+}
+.navigation a:hover
+{
+    color: #ff0000;
+}
+
+footer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1.25rem 0;
+    text-align: center;
+    margin-top: 10%;
+}
+
+footer > p
+{
+    margin-bottom: 1%;
+}
+.socialMedia li
+{
+    display: inline-block;
+    padding: 0.3125rem;
+    list-style: none;
+}
+
+.fab /* Iconen in de footer*/
+{
+   text-decoration: none;
+   color: #ffffff;
+}
+/*algemeen*/
+
+/*Home*/
+
+.fotosIndex
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:21.875rem 21.875rem 21.875rem;
+}
+ 
+#foto1, #foto2, #foto3 /* Foto's op de index pagina*/
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#WaaromAlphafit
+{
+    text-align: center;
+    font-size: 1.875rem;
+    margin: 5% 0;
+}
+
+.IndexRedenen
+{
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: auto;
+    margin: 0;
+}
+
+.KiesOns /* De sterke punten op de index pagina*/
+{
+    text-align: center;
+    font-size: 2rem;
+    font-size: 0.9375rem;
+    padding: 2%;
+    margin: 2%;
+    border:0.1875rem solid #000000;
+    border-radius: 1.5625rem;
+    padding:0.3125rem 2.5rem 0.3125rem 2.5rem ;
+}
+
+.KiesOns > h3
+{
+    margin: 2% 0;
+}
+
+/*Home*/
+ 
+/*Abonnementen*/
+ 
+.GridAbonnementen
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 2%;
+    margin: 0 2% 60% 2%;
+}
+ 
+.titelAbonnementen
+{
+    font-size: 1.5625rem;
+}
+
+.prijsLijst
+{
+    font-size: 1.5625rem;
+}
+
+.abboLijst
+{
+    list-style: none;
+}
+ 
+.abbo1, .abbo2, .abbo3 /* De abonnementen*/
+{
+    font-size: 1.0625rem;
+    border: 0.1875rem solid #000000;
+    grid-column: 1/ 2;
+    padding: 0.9375rem;
+    border-radius: 0.3125rem;
+    background-color: #d3d3d3;
+}
+/*Abonnementen*/
+ 
+/*Over ons*/
+ 
+.WieZijnWe /* Grid voor alle content op de OverOns pagina*/
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 2%;
+}
+
+#openingsurenGrid ul
+{
+    list-style: none;
+}
+
+#tekstOverOns
+{
+    grid-row: 1/3;
+}
+
+#tekstOverOns > p
+{
+    margin-bottom: 3%;
+}
+ 
+#openingsurenGrid
+{
+    text-align: left;
+    margin-top: 5%;
+    font-size: 1.25rem;
+}
+
+#maps /* Google Maps kaart*/
+{
+    width: 80%;
+    height: 40%;
+    margin-top: 2%;
+}
+
+address
+{
+    margin-top: 5%;
+    font-size: 1.25rem;
+    text-align: left;
+}
+ 
+/*Over ons*/
+ 
+/*contact*/
+ 
+.gridFormulier
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+#vragen
+{
+    margin: 2% 2% 5% 2%;
+}
+
+#vragen > h2
+{
+    margin-bottom: 2%;
+}
+
+.formulier
+{
+    margin: 2%;
+}
+
+input[type=text], select, textarea 
+{
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    margin-top: 0.375rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+  }
+
+input[type=submit] 
+{
+    background-color: grey;
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+  }
+
+/*contact*/
+ 
+/*groepslessen*/
+ 
+#groepslessenGrid
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    margin: 2% 2% 50% 2%;
+    grid-gap: 1%;
+}
+
+.titelGroep
+{
+    margin: 2% 0;
+}
+
+.fotossoorten
+{
+    width: 100%;
+}
+
+/*groepslessen*/
+
+@media (min-width: 768px)
+{
+    /*Algemeen*/
+    .Titel
+    {
+        font-size: 3.75rem;
+    }
+
+    .grid /* Grid/flexbox voor de navigatiebalk*/
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo
+    {
+        text-align: center;
+        margin: 2% 0 2% 0;
+    }
+
+    .navigation ul li
+    {
+        display: inline-block;
+        margin: 2% 1rem 1rem 0;
+        font-size: 1.25rem;
+        color: #ffffff;  
+        text-align: right;
+        padding: 1%;
+    }
+
+    .navigation ul li a
+    {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    footer
+    {
+        margin-top: 5%;
+    }
+
+    /*Algemeen*/
+
+    /*Home*/
+    .fotosIndex
+    {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .IndexRedenen
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .KiesOns
+    {
+        font-size: 1.4375rem;
+        padding: 2%;
+    }
+    /*Home*/
+
+    /*Abonnementen*/
+    .GridAbonnementen
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 2%;
+        margin: 5% 2% 10% 2%;
+    }
+
+    /*Abonnementen*/
+    
+    /*Groepslessen*/
+    #groepslessenGrid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 2%;
+    }
+
+    .fotossoorten
+    {
+        width: 100%;
+        height: 15.625rem;
+    }
+    .titelGroep
+    {
+        margin-bottom: 1%;
+    }
+
+    /*Groepslessen*/
+
+    /*Over ons*/
+
+    .WieZijnWe
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    #openingsurenGrid
+    {
+        text-align: right;
+        margin-left: 15%;
+        font-size: 1.25rem;
+    }
+
+    address
+    {
+        text-align: right;
+        margin-right: 5%;
+    }
+
+    /*Over ons*/
+
+    /*contact*/
+
+    .gridFormulier
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    #vragen
+    {
+        grid-column: 1 / 3;
+        margin-bottom: 5%;
+    }
+    #vragen, .formulier
+    {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*contact*/
+}
+
+@media (min-width: 1500px)
+{
+    /*algemeen*/
+
+    .grid
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Titel
+    {
+        text-align: center;
+        font-size: 6.25em;
+        margin: 1%;
+    }
+
+    .logo
+    {
+        text-align: left;
+        margin: 2% auto 2% 2%;
+        font-size: 2.5rem;
+    }
+
+    .navigation ul li
+    {
+        margin: 7% 1em 1em auto;
+        font-size: 1.4rem;
+        padding: 0;
+    }
+
+    footer
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 1.25rem 0;
+    }
+
+    /*Algemeen*/
+
+    /*Home*/
+    .fotosIndex
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 37.5rem;
+    }
+
+    #foto1, #foto2, #foto3
+    {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .IndexRedenen
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        margin: 0 0 5% 0;
+    }
+
+    .KiesOns > h3
+    {
+        margin: 2%;
+    }
+    #WaaromAlphafit
+    {
+        grid-column: 1 / 3;
+        font-size: 2.8125rem;
+        margin-top: 2.5%;
+        text-align: center;
+    }
+
+    .KiesOns
+    {
+        margin-top: 5%;
+        width: 60%;
+        margin-left: 15%;
+    }
+
+    /*Home*/
+
+    /*abonnementen*/
+    .GridAbonnementen
+    {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        font-size: 1.25rem;
+        margin: 5% 0 10% 15%;
+    }
+
+    .titelAbonnementen
+    {
+        font-size: 2rem;
+        margin-bottom: 2%;
+    }
+
+    .abbo1, .abbo2, .abbo3
+    {
+        width: auto;
+        border: none;
+        background-color: #ffffff;
+    }
+
+    .abboLijst li 
+    {
+        font-size: 25px ;
+    }
+    .informatiePrijzen
+    {
+        width: 50%;
+        font-size: 1.5625rem;
+    }
+    /*abonnementen*/
+
+    /*OverOns*/
+
+    .WieZijnWe
+    {
+        display: grid;
+        grid-template-columns: 31.25rem 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 5% 0 10% 5%;
+        font-size: 1.25rem;
+    }
+
+    #tekstOverOns
+    {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #openingsurenGrid
+    {
+        text-align: center;
+        margin: 0 5% 5% 0;
+        font-size: 2.5rem;
+    }
+
+    #openingsurenGrid li 
+    {
+        padding-top: 2%;
+    }
+
+    address
+    {
+        text-align: right;
+        font-size: 1.5625rem;
+    }
+
+    #maps
+    {
+        width: 25rem;
+        height: 12.5rem;
+        margin-top: 2%;
+    }
+
+    /*OverOns*/
+
+    /*contact*/
+    .gridFormulier
+    {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        margin: 0 5%;
+    }
+
+    #vragen
+    {
+        font-size: 1.25rem;
+        margin: 5% 10% 0 0;
+        width: 50%;
+    }
+
+    .formulier
+    {
+        margin: 5% 0;
+        width: 50%;
+    }
+    /*contact*/
+
+    /*Groepslessen*/
+
+    #groepslessenGrid
+    {
+        display: grid;
+        grid-template-columns: 28.125rem 28.125rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 5% 20% 20% 25%;
+        grid-gap: 5%;
+    }
+
+    .titelGroep
+    {
+        margin: 2% 0;
+    }
+
+    .fotossoorten
+    {
+        width: 28.125rem;
+        height: 15.625rem;
+    }
+    .soorten
+    {
+        font-size: 1.25em;
+
+    }
+    /*Groepslessen*/
+}
+
+
+
+/*
+    Lijst van externe links die ik heb gebruikt:
+
+    Voor CSS grid : https://www.youtube.com/watch?v=HgwCeNVPlo0&t=850s
+    Voor css flexbox : https://www.youtube.com/watch?v=PwWHL3RyQgk&t=671s
+    Lettertype van Google Fonts
+    Foto's kleiner gemaakt met https://squoosh.app/
+    In het begin had ik veel px gebruikt. Om dit om te zetten gebruikte ik: https://www.ninjaunits.com/converters/pixels/pixels-rem/
+    Voor kleine details : gevraagd aan kennisen of opzoeken op Google (vaak reddit en stackoverflow)
+    Al de rest uit de cursus of kennis die ik al had.
+
+*/
